@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2021 Misfra team
+According to the Apache-2.0 license, (hereinafter referred to as "license");
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and limitations under the License.
+-->
+<SOC Name="STM32F030C6Tx" ClockTree="STM32F0" HasPowerPad="false" IOType="" Package="LQFP48">
+	<Introduction English="Mainstream Arm Cortex-M0 Value line MCU with 32 Kbytes of Flash memory, 48 MHz CPU"
+                  Chinese="具有32KB Flash和48MHz CPU的主流Arm Cortex-M0超值系列MCU" />
+	<Illustrate>
+		<English>
+			<![CDATA[
+			  ·   The STM32F030x4/x6/x8/xC microcontrollers incorporate the high-performance Arm® Cortex®-M0 32-bit RISC core operating at a 48 MHz frequency, high-speed embedded memories (up to 256 Kbytes of Flash memory and up to 32 Kbytes of SRAM), and an extensive range of enhanced peripherals and I/Os. All devices offer standard communication interfaces (up to two I2Cs, up to two SPIs and up to six USARTs), one 12-bit ADC, seven general-purpose 16-bit timers and an advanced-control PWM timer.
+			  ·   The STM32F030x4/x6/x8/xC microcontrollers operate in the -40 to +85 °C temperature range from a 2.4 to 3.6V power supply. A comprehensive set of power-saving modes allows the design of low-power applications.
+			  ·   The STM32F030x4/x6/x8/xC microcontrollers include devices in four different packages ranging from 20 pins to 64 pins. Depending on the device chosen, different sets of peripherals are included. The description below provides an overview of the complete range of STM32F030x4/x6/x8/xC peripherals proposed.
+			  ·   These features make the STM32F030x4/x6/x8/xC microcontrollers suitable for a wide range of applications such as application control and user interfaces, handheld equipment, A/V receivers and digital TV, PC peripherals, gaming and GPS platforms, industrial applications, PLCs, inverters, printers, scanners, alarm systems, video intercoms, and HVACs.
+			]]>
+		</English>
+		<Chinese>
+			<![CDATA[
+			  ·   STM32F030x4/x6/x8/xC 微控制器包含以 48 MHz 频率运行的高性能 Arm® Cortex®-M0 32 位 RISC内核、高速嵌入式存储器（高达 256 KB 的闪存和高达 32 KB 的闪存） SRAM），以及广泛的增强型外设和I /O。所有器件都提供标准通信接口（最多两个 I2C、最多两个 SPI 和最多六个 USART）、一个 12 位 ADC、七个通用 16位定时器和一个高级控制 PWM 定时器。
+			  ·   STM32F030x4/x6/x8/xC 微控制器可在 -40 至 +85 °C 的温度范围内工作，电源电压为2.4 至 3.6V。一套全面的节能模式允许设计低功耗应用。
+			  ·   STM32F030x4/x6/x8/xC 微控制器包括采用四种不同封装的器件，从 20 引脚到 64 引脚不等。根据选择的设备，包括不同的外围设备。下面的描述概述了建议的 STM32F030x4/x6/x8/xC 外设的完整范围。
+			  ·   这些特性使STM32F030x4/x6/x8/xC 微控制器适用于广泛的应用，例如应用控制和用户界面、手持设备、A/V 接收器和数字电视、PC 外围设备、游戏和 GPS 平台、工业应用、PLC 、逆变器、打印机、扫描仪、警报系统、视频对讲机和暖通空调。
+			]]>
+		</Chinese>
+	</Illustrate>
+	<Url English="https://www.st.com/en/microcontrollers-microprocessors/stm32f030c6.html"
+         Chinese="https://www.st.com/zh/microcontrollers-microprocessors/stm32f030c6.html" />
+	<DataSheets>
+		<Document Name="Datasheet"
+				  English="https://www.st.com/resource/en/datasheet/stm32f030c6.pdf"
+                  Chinese="https://www.st.com/resource/zh/datasheet/stm32f030c6.pdf" />
+	</DataSheets>
+	<References>
+		<Document Name="RM0360: STM32F030x4/x6/x8/xC and STM32F070x6/xB advanced ARM®-based 32-bit MCUs"
+                  English="https://www.st.com/resource/en/reference_manual/rm0360-stm32f030x4x6x8xc-and-stm32f070x6xb-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"
+                  Chinese="https://www.st.com/resource/zh/reference_manual/rm0360-stm32f030x4x6x8xc-and-stm32f070x6xb-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" />
+	</References>
+	<Programs>
+		<Document Name="PM0215: STM32F0xxx Cortex-M0 programming manual"
+                  English="https://www.st.com/resource/en/programming_manual/pm0215-stm32f0xxx-cortexm0-programming-manual-stmicroelectronics.pdf"
+                  Chinese="https://www.st.com/resource/zh/programming_manual/pm0215-stm32f0xxx-cortexm0-programming-manual-stmicroelectronics.pdf" />
+	</Programs>
+	<Errata>
+		<Document Name="ES0219: STM32F030x4/x6/x8/xC device errata"
+                  English="https://www.st.com/resource/en/errata_sheet/es0219-stm32f030x4x6x8xc-device-errata-stmicroelectronics.pdf"
+                  Chinese="https://www.st.com/resource/zh/errata_sheet/es0219-stm32f030x4x6x8xc-device-errata-stmicroelectronics.pdf" />
+	</Errata>
+	<Applications>
+		<Document Name="AN3126 Audio and waveform generation using the DAC in STM32 products"
+                  English="https://www.st.com/resource/en/application_note/an3126-audio-and-waveform-generation-using-the-dac-in-stm32-products-stmicroelectronics.pdf"
+                  Chinese="https://www.st.com/resource/zh/application_note/an3126-audio-and-waveform-generation-using-the-dac-in-stm32-products-stmicroelectronics.pdf" />
+	</Applications>
+	<Modules>
+		<Modules English= "System Core" Chinese="系统核心">
+			<Modules>
+				<Module Name="DMA" />
+				<Module Name="GPIO" IP="STM32F031_GPIO_IP" Config="STM32F0xx_GPIO_Config" />
+				<Module Name="IWDG" />
+				<Module Name="NVIC" />
+				<Module Name="RCC" />
+				<Module Name="SYS" />
+				<Module Name="WWDG" />
+			</Modules>
+		</Modules>
+		<Modules English= "Analog" Chinese="模拟">
+			<Modules>
+				<Module Name="ADC" />
+			</Modules>
+		</Modules>
+		<Modules English= "Timers" Chinese="定时器">
+			<Modules>
+				<Module Name="RTC" />
+				<Module Name="TIM1" />
+				<Module Name="TIM3" />
+				<Module Name="TIM14" />
+				<Module Name="TIM16" />
+				<Module Name="TIM17" />
+			</Modules>
+		</Modules>
+		<Modules English= "Connectivity" Chinese="通信">
+			<Modules>
+				<Module Name="I2C1" />
+				<Module Name="IRTIM" />
+				<Module Name="SPI1" />
+				<Module Name="USART1" />
+			</Modules>
+		</Modules>
+		<Modules English= "Computing" Chinese="计算">
+			<Modules>
+				<Module Name="CRC" />
+			</Modules>
+		</Modules>
+	</Modules>
+	<Pins>
+		<Pin Name="VDD" Position="1" Type="Power" />
+		<Pin Name="PC13" Position="2" Type="I/O">
+			<Functions>
+				<Function Name="RTC-OUT-ALARM" />
+				<Function Name="RTC-OUT-CALIB" />
+				<Function Name="RTC-TAMP1" />
+				<Function Name="RTC-TS" />
+				<Function Name="SYS-WKUP2" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PC14" Position="3" Type="I/O">
+			<Functions>
+				<Function Name="RCC-OSC32-IN" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PC15" Position="4" Type="I/O">
+			<Functions>
+				<Function Name="RCC-OSC32-OUT" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PF0" Position="5" Type="I/O">
+			<Functions>
+				<Function Name="RCC-OSC-IN" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PF1" Position="6" Type="I/O">
+			<Functions>
+				<Function Name="RCC-OSC-OUT" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="NRST" Position="7" Type="Reset" />
+		<Pin Name="VSSA" Position="8" Type="Power" />
+		<Pin Name="VDDA" Position="9" Type="Power" />
+		<Pin Name="PA0" Position="10" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN0" />
+				<Function Name="RTC-TAMP2" />
+				<Function Name="SYS-WKUP1" />
+				<Function Name="USART1-CTS" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA1" Position="11" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN1" />
+				<Function Name="USART1-DE" />
+				<Function Name="USART1-RTS" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA2" Position="12" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN2" />
+				<Function Name="USART1-TX" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA3" Position="13" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN3" />
+				<Function Name="USART1-RX" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA4" Position="14" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN4" />
+				<Function Name="SPI1-NSS" />
+				<Function Name="TIM14-CH1" />
+				<Function Name="USART1-CK" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA5" Position="15" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN5" />
+				<Function Name="SPI1-SCK" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA6" Position="16" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN6" />
+				<Function Name="SPI1-MISO" />
+				<Function Name="TIM16-CH1" />
+				<Function Name="TIM1-BKIN" />
+				<Function Name="TIM3-CH1" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA7" Position="17" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN7" />
+				<Function Name="SPI1-MOSI" />
+				<Function Name="TIM14-CH1" />
+				<Function Name="TIM17-CH1" />
+				<Function Name="TIM1-CH1N" />
+				<Function Name="TIM3-CH2" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB0" Position="18" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN8" />
+				<Function Name="TIM1-CH2N" />
+				<Function Name="TIM3-CH3" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB1" Position="19" Type="I/O">
+			<Functions>
+				<Function Name="ADC-IN9" />
+				<Function Name="TIM14-CH1" />
+				<Function Name="TIM1-CH3N" />
+				<Function Name="TIM3-CH4" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB2" Position="20" Type="I/O">
+			<Functions>
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB10" Position="21" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SCL" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB11" Position="22" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SDA" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="VSS" Position="23" Type="Power" />
+		<Pin Name="VDD" Position="24" Type="Power" />
+		<Pin Name="PB12" Position="25" Type="I/O">
+			<Functions>
+				<Function Name="SPI1-NSS" />
+				<Function Name="TIM1-BKIN" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB13" Position="26" Type="I/O">
+			<Functions>
+				<Function Name="SPI1-SCK" />
+				<Function Name="TIM1-CH1N" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB14" Position="27" Type="I/O">
+			<Functions>
+				<Function Name="SPI1-MISO" />
+				<Function Name="TIM1-CH2N" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB15" Position="28" Type="I/O">
+			<Functions>
+				<Function Name="RTC-REFIN" />
+				<Function Name="SPI1-MOSI" />
+				<Function Name="TIM1-CH3N" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA8" Position="29" Type="I/O">
+			<Functions>
+				<Function Name="RCC-MCO" />
+				<Function Name="TIM1-CH1" />
+				<Function Name="USART1-CK" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA9" Position="30" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SCL" />
+				<Function Name="TIM1-CH2" />
+				<Function Name="USART1-TX" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA10" Position="31" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SDA" />
+				<Function Name="TIM17-BKIN" />
+				<Function Name="TIM1-CH3" />
+				<Function Name="USART1-RX" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA11" Position="32" Type="I/O">
+			<Functions>
+				<Function Name="TIM1-CH4" />
+				<Function Name="USART1-CTS" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA12" Position="33" Type="I/O">
+			<Functions>
+				<Function Name="TIM1-ETR" />
+				<Function Name="USART1-DE" />
+				<Function Name="USART1-RTS" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA13" Position="34" Type="I/O">
+			<Functions>
+				<Function Name="IR-OUT" />
+				<Function Name="SYS-SWDIO" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PF6" Position="35" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SCL" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PF7" Position="36" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SDA" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA14" Position="37" Type="I/O">
+			<Functions>
+				<Function Name="SYS-SWCLK" />
+				<Function Name="USART1-TX" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PA15" Position="38" Type="I/O">
+			<Functions>
+				<Function Name="SPI1-NSS" />
+				<Function Name="USART1-RX" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB3" Position="39" Type="I/O">
+			<Functions>
+				<Function Name="SPI1-SCK" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB4" Position="40" Type="I/O">
+			<Functions>
+				<Function Name="SPI1-MISO" />
+				<Function Name="TIM3-CH1" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB5" Position="41" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SMBA" />
+				<Function Name="SPI1-MOSI" />
+				<Function Name="TIM16-BKIN" />
+				<Function Name="TIM3-CH2" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB6" Position="42" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SCL" />
+				<Function Name="TIM16-CH1N" />
+				<Function Name="USART1-TX" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB7" Position="43" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SDA" />
+				<Function Name="TIM17-CH1N" />
+				<Function Name="USART1-RX" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="BOOT0" Position="44" Type="Boot" />
+		<Pin Name="PB8" Position="45" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SCL" />
+				<Function Name="TIM16-CH1" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="PB9" Position="46" Type="I/O">
+			<Functions>
+				<Function Name="I2C1-SDA" />
+				<Function Name="IR-OUT" />
+				<Function Name="TIM17-CH1" />
+				<Function Name="GPIO-INPUT" />
+				<Function Name="GPIO-OUTPUT" />
+				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-EXTI" />
+			</Functions>
+		</Pin>
+		<Pin Name="VSS" Position="47" Type="Power" />
+		<Pin Name="VDD" Position="48" Type="Power" />
+	</Pins>
+</SOC>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2021 Misfra team
+    According to the Apache-2.0 license, (hereinafter referred to as "license");
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and limitations under the License.
+-->
+<Database>
+	<Companies>
+		<Company Name="STMicroelectronics">
+			<Series>
+				<Series Name="STM32F0">
+					<Lines>
+						<Line Name="STM32F0x0 Value Line">
+							<SOC>
+								<SOC Name="STM32F030C6Tx" Package="LQFP48" Core="Arm Cortex-M0" Frequency="48" Ram="4" IO="39" Flash="32">
+									<Voltage Max="3.6" Min="2.4" />
+									<Current Lowest="3.4" Run="250.0" />
+									<Temperature Max="85.0" Min="-40.0" />
+									<Peripherals>
+										<Peripheral Type="ADC 12-bit" Number="10" />
+										<Peripheral Type="I2C" Number="1" />
+										<Peripheral Type="IRTIM" Number="1" />
+										<Peripheral Type="RTC" Number="1" />
+										<Peripheral Type="SPI" Number="1" />
+										<Peripheral Type="Timer 16-bit" Number="5" />
+										<Peripheral Type="USART" Number="1" />
+									</Peripherals>
+								</SOC>
+							</SOC>
+						</Line>
+					</Lines>
+				</Series>
+			</Series>
+		</Company>
+	</Companies>
+</Database>

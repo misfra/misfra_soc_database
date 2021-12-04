@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright 2021 Misfra team
+    According to the Apache-2.0 license, (hereinafter referred to as "license");
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and limitations under the License.
+-->
+<IP>
+	<Parameters>
+		<Parameter Name="GPIOx" Comment="GPIO address">
+			<Values>
+				<Value Name="GPIOA" Comment="Port A address" />
+				<Value Name="GPIOB" Comment="Port B address" />
+				<Value Name="GPIOC" Comment="Port C address" />
+				<Value Name="GPIOF" Comment="Port F address" />
+			</Values>
+		</Parameter>
+		<Parameter Name="PinState" Comment="GPIO output level" DefaultValue="GPIO_PIN_RESET">
+			<Values>
+				<Value Name="GPIO_PIN_RESET" Comment="Low" />
+				<Value Name="GPIO_PIN_SET" Comment="High" />
+			</Values>
+		</Parameter>
+		<Parameter Name="GPIO_Speed" Comment="Maximum output speed" DefaultValue="GPIO_SPEED_FREQ_LOW">
+			<Values>
+				<Value Name="GPIO_SPEED_FREQ_LOW" Comment="Low" />
+				<Value Name="GPIO_SPEED_FREQ_MEDIUM" Comment="Medium" />
+				<Value Name="GPIO_SPEED_FREQ_HIGH" Comment="High" />
+			</Values>
+		</Parameter>
+		<Parameter Name="GPIO_Mode" Comment="GPIO mode">
+			<Values>
+				<Value Name="GPIO_MODE_INPUT" Comment="Input mode" />
+				<Value Name="GPIO_MODE_OUTPUT_PP" Comment="Output Push Pull" />
+				<Value Name="GPIO_MODE_OUTPUT_OD" Comment="Output Open Drain" />
+				<Value Name="GPIO_MODE_AF_PP" Comment="Alternate Function Push Pull" />
+				<Value Name="GPIO_MODE_AF_OD" Comment="Alternate Function Open Drain" />
+				<Value Name="GPIO_MODE_ANALOG" Comment="Analog mode" />
+				<Value Name="GPIO_MODE_IT_RISING" Comment="External Interrupt Mode with Rising edge trigger detection" />
+				<Value Name="GPIO_MODE_IT_FALLING" Comment="External Interrupt Mode with Falling edge trigger detection" />
+				<Value Name="GPIO_MODE_IT_RISING_FALLING" Comment="External Interrupt Mode with Rising/Falling edge trigger detection" />
+				<Value Name="GPIO_MODE_EVT_RISING" Comment="External Event Mode with Rising edge trigger detection" />
+				<Value Name="GPIO_MODE_EVT_FALLING" Comment="External Event Mode with Falling edge trigger detection" />
+				<Value Name="GPIO_MODE_EVT_RISING_FALLING" Comment="External Event Mode with Rising/Falling edge trigger detection" />
+			</Values>
+		</Parameter>
+		<Parameter Name="GPIO_PuPd" Comment="GPIO Pull-up/Pull-down" DefaultValue="GPIO_NOPULL">
+			<Values>
+				<Value Name="GPIO_NOPULL" Comment="No pull-up and no pull-down" />
+				<Value Name="GPIO_PULLUP" Comment="Pull-up" />
+				<Value Name="GPIO_PULLDOWN" Comment="Pull-down" />
+			</Values>
+		</Parameter>
+	</Parameters>
+	<Modes>
+		<Mode Type="Input" ConfigMode="GPIO">
+			<Parameters>
+				<Parameter Name="GPIO_PuPd" />
+				<Parameter Name="GPIOx" />
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_INPUT</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Pin" />
+			</Parameters>
+		</Mode>
+	</Modes>
+</IP>
