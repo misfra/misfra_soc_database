@@ -1,71 +1,449 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <!--
-    Copyright 2021 Misfra team
-    According to the Apache-2.0 license, (hereinafter referred to as "license");
+  Copyright 2021 Misfra team
+  According to the Apache-2.0 license, (hereinafter referred to as "license");
 
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and limitations under the License.
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and limitations under the License.
 -->
 <IP>
 	<Parameters>
-		<Parameter Name="GPIOx" Comment="GPIO address">
+		<Parameter Name="GPIOx" English="GPIO address" Chinese="GPIO 地址">
 			<Values>
-				<Value Name="GPIOA" Comment="Port A address" />
-				<Value Name="GPIOB" Comment="Port B address" />
-				<Value Name="GPIOC" Comment="Port C address" />
-				<Value Name="GPIOF" Comment="Port F address" />
+				<Value Name="GPIOA" English="Port A address" Chinese="端口 A 地址" />
+				<Value Name="GPIOB" English="Port B address" Chinese="端口 B 地址" />
+				<Value Name="GPIOC" English="Port C address" Chinese="端口 C 地址" />
+				<Value Name="GPIOF" English="Port F address" Chinese="端口 F 地址" />
 			</Values>
 		</Parameter>
-		<Parameter Name="PinState" Comment="GPIO output level" DefaultValue="GPIO_PIN_RESET">
+		<Parameter Name="GPIO_State" English="GPIO output level" Chinese="GPIO 输出电平">
 			<Values>
-				<Value Name="GPIO_PIN_RESET" Comment="Low" />
-				<Value Name="GPIO_PIN_SET" Comment="High" />
+				<Value Name="GPIO_PIN_RESET" English="Low" Chinese="低电平" />
+				<Value Name="GPIO_PIN_SET" English="High" Chinese="高电平" />
 			</Values>
 		</Parameter>
-		<Parameter Name="GPIO_Speed" Comment="Maximum output speed" DefaultValue="GPIO_SPEED_FREQ_LOW">
+		<Parameter Name="GPIO_Speed" English="Maximum output speed" Chinese="GPIO 最大速率">
 			<Values>
-				<Value Name="GPIO_SPEED_FREQ_LOW" Comment="Low" />
-				<Value Name="GPIO_SPEED_FREQ_MEDIUM" Comment="Medium" />
-				<Value Name="GPIO_SPEED_FREQ_HIGH" Comment="High" />
+				<Value Name="GPIO_SPEED_FREQ_LOW" English="Low" Chinese="低速" />
+				<Value Name="GPIO_SPEED_FREQ_MEDIUM" English="Medium" Chinese="中速" />
+				<Value Name="GPIO_SPEED_FREQ_HIGH" English="High" Chinese="高速" />
 			</Values>
 		</Parameter>
-		<Parameter Name="GPIO_Mode" Comment="GPIO mode">
+		<Parameter Name="GPIO_Mode" English="GPIO mode" Chinese="GPIO 模式">
 			<Values>
-				<Value Name="GPIO_MODE_INPUT" Comment="Input mode" />
-				<Value Name="GPIO_MODE_OUTPUT_PP" Comment="Output Push Pull" />
-				<Value Name="GPIO_MODE_OUTPUT_OD" Comment="Output Open Drain" />
-				<Value Name="GPIO_MODE_AF_PP" Comment="Alternate Function Push Pull" />
-				<Value Name="GPIO_MODE_AF_OD" Comment="Alternate Function Open Drain" />
-				<Value Name="GPIO_MODE_ANALOG" Comment="Analog mode" />
-				<Value Name="GPIO_MODE_IT_RISING" Comment="External Interrupt Mode with Rising edge trigger detection" />
-				<Value Name="GPIO_MODE_IT_FALLING" Comment="External Interrupt Mode with Falling edge trigger detection" />
-				<Value Name="GPIO_MODE_IT_RISING_FALLING" Comment="External Interrupt Mode with Rising/Falling edge trigger detection" />
-				<Value Name="GPIO_MODE_EVT_RISING" Comment="External Event Mode with Rising edge trigger detection" />
-				<Value Name="GPIO_MODE_EVT_FALLING" Comment="External Event Mode with Falling edge trigger detection" />
-				<Value Name="GPIO_MODE_EVT_RISING_FALLING" Comment="External Event Mode with Rising/Falling edge trigger detection" />
+				<Value Name="GPIO_MODE_INPUT" English="Input mode" Chinese="输入模式" />
+				<Value Name="GPIO_MODE_OUTPUT_PP" English="Output Push Pull" Chinese="推挽输出模式" />
+				<Value Name="GPIO_MODE_OUTPUT_OD" English="Output Open Drain" Chinese="开漏输出模式" />
+				<Value Name="GPIO_MODE_AF_PP" English="Alternate Function Push Pull" Chinese="推挽复用模式" />
+				<Value Name="GPIO_MODE_AF_OD" English="Alternate Function Open Drain" Chinese="开漏复用模式" />
+				<Value Name="GPIO_MODE_ANALOG" English="Analog mode" Chinese="模拟模式" />
+				<Value Name="GPIO_MODE_IT_RISING" English="External Interrupt Mode with Rising edge trigger detection" Chinese="上升沿中断模式" />
+				<Value Name="GPIO_MODE_IT_FALLING" English="External Interrupt Mode with Falling edge trigger detection" Chinese="下降沿中断模式" />
+				<Value Name="GPIO_MODE_IT_RISING_FALLING" English="External Interrupt Mode with Rising/Falling edge trigger detection" Chinese="上升沿下降沿中断模式" />
+				<Value Name="GPIO_MODE_EVT_RISING" English="External Event Mode with Rising edge trigger detection" Chinese="上升沿事件模式" />
+				<Value Name="GPIO_MODE_EVT_FALLING" English="External Event Mode with Falling edge trigger detection" Chinese="下降沿事件模式" />
+				<Value Name="GPIO_MODE_EVT_RISING_FALLING" English="External Event Mode with Rising/Falling edge trigger detection" Chinese="上升沿下降沿事件模式" />
 			</Values>
 		</Parameter>
-		<Parameter Name="GPIO_PuPd" Comment="GPIO Pull-up/Pull-down" DefaultValue="GPIO_NOPULL">
+		<Parameter Name="GPIO_Pull" English="GPIO Pull-up/Pull-down" Chinese="GPIO 钳位">
 			<Values>
-				<Value Name="GPIO_NOPULL" Comment="No pull-up and no pull-down" />
-				<Value Name="GPIO_PULLUP" Comment="Pull-up" />
-				<Value Name="GPIO_PULLDOWN" Comment="Pull-down" />
+				<Value Name="GPIO_NOPULL" English="No pull-up and no pull-down" Chinese="浮空" />
+				<Value Name="GPIO_PULLUP" English="Pull-up" Chinese="上拉" />
+				<Value Name="GPIO_PULLDOWN" English="Pull-down" Chinese="下拉" />
+			</Values>
+		</Parameter>
+		<Parameter Name="GPIO_FM_B6" English="Fast Mode" Chinese="快速模式">
+			<Values>
+				<Value Name="__NULL" English="Disable" Chinese="禁用" />
+				<Value Name="SYSCFG_CFGR1_I2C_FMP_PB6" English="Enable" Chinese="使能" />
+			</Values>
+		</Parameter>
+		<Parameter Name="GPIO_FM_B7" English="Fast Mode" Chinese="快速模式">
+			<Values>
+				<Value Name="__NULL" English="Disable" Chinese="禁用" />
+				<Value Name="SYSCFG_CFGR1_I2C_FMP_PB7" English="Enable" Chinese="使能" />
+			</Values>
+		</Parameter>
+		<Parameter Name="GPIO_FM_B8" English="Fast Mode" Chinese="快速模式">
+			<Values>
+				<Value Name="__NULL" English="Disable" Chinese="禁用" />
+				<Value Name="SYSCFG_CFGR1_I2C_FMP_PB8" English="Enable" Chinese="使能" />
+			</Values>
+		</Parameter>
+		<Parameter Name="GPIO_FM_B9" English="Fast Mode" Chinese="快速模式">
+			<Values>
+				<Value Name="__NULL" English="Disable" Chinese="禁用" />
+				<Value Name="SYSCFG_CFGR1_I2C_FMP_PB9" English="Enable" Chinese="使能" />
+			</Values>
+		</Parameter>
+		<Parameter Name="GPIO_FM_A9" English="Fast Mode" Chinese="快速模式">
+			<Values>
+				<Value Name="__NULL" English="Disable" Chinese="禁用" />
+				<Value Name="SYSCFG_CFGR1_I2C_FMP_PA9" English="Enable" Chinese="使能" />
+			</Values>
+		</Parameter>
+		<Parameter Name="GPIO_FM_A10" English="Fast Mode" Chinese="快速模式">
+			<Values>
+				<Value Name="__NULL" English="Disable" Chinese="禁用" />
+				<Value Name="SYSCFG_CFGR1_I2C_FMP_PA10" English="Enable" Chinese="使能" />
 			</Values>
 		</Parameter>
 	</Parameters>
 	<Modes>
 		<Mode Type="Input" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>!(NULL)</Expression>
+			</Expressions>
 			<Parameters>
-				<Parameter Name="GPIO_PuPd" />
-				<Parameter Name="GPIOx" />
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
 				<Parameter Name="GPIO_Mode">
 					<Values>
 						<Value>GPIO_MODE_INPUT</Value>
 					</Values>
 				</Parameter>
-				<Parameter Name="GPIO_Pin" />
+			</Parameters>
+		</Mode>
+		<Mode Type="Analog" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>!(NULL)</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_ANALOG</Value>
+					</Values>
+				</Parameter>
+			</Parameters>
+		</Mode>
+		<Mode Type="Output" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>PA9</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_State">
+					<Values>
+						<Value>GPIO_PIN_RESET</Value>
+						<Value>GPIO_PIN_SET</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Speed">
+					<Values>
+						<Value>GPIO_SPEED_FREQ_LOW</Value>
+						<Value>GPIO_SPEED_FREQ_MEDIUM</Value>
+						<Value>GPIO_SPEED_FREQ_HIGH</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_OUTPUT_PP</Value>
+						<Value>GPIO_MODE_OUTPUT_OD</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_FM_A9">
+					<Values>
+						<Value>__NULL</Value>
+						<Value>SYSCFG_CFGR1_I2C_FMP_PA9</Value>
+					</Values>
+				</Parameter>
+			</Parameters>
+		</Mode>
+		<Mode Type="Output" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>PA10</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_State">
+					<Values>
+						<Value>GPIO_PIN_RESET</Value>
+						<Value>GPIO_PIN_SET</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Speed">
+					<Values>
+						<Value>GPIO_SPEED_FREQ_LOW</Value>
+						<Value>GPIO_SPEED_FREQ_MEDIUM</Value>
+						<Value>GPIO_SPEED_FREQ_HIGH</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_OUTPUT_PP</Value>
+						<Value>GPIO_MODE_OUTPUT_OD</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_FM_A10">
+					<Values>
+						<Value>__NULL</Value>
+						<Value>SYSCFG_CFGR1_I2C_FMP_PA10</Value>
+					</Values>
+				</Parameter>
+			</Parameters>
+		</Mode>
+		<Mode Type="Output" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>PB6</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_State">
+					<Values>
+						<Value>GPIO_PIN_RESET</Value>
+						<Value>GPIO_PIN_SET</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Speed">
+					<Values>
+						<Value>GPIO_SPEED_FREQ_LOW</Value>
+						<Value>GPIO_SPEED_FREQ_MEDIUM</Value>
+						<Value>GPIO_SPEED_FREQ_HIGH</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_OUTPUT_PP</Value>
+						<Value>GPIO_MODE_OUTPUT_OD</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_FM_B6">
+					<Values>
+						<Value>__NULL</Value>
+						<Value>SYSCFG_CFGR1_I2C_FMP_PB6</Value>
+					</Values>
+				</Parameter>
+			</Parameters>
+		</Mode>
+		<Mode Type="Output" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>PB7</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_State">
+					<Values>
+						<Value>GPIO_PIN_RESET</Value>
+						<Value>GPIO_PIN_SET</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Speed">
+					<Values>
+						<Value>GPIO_SPEED_FREQ_LOW</Value>
+						<Value>GPIO_SPEED_FREQ_MEDIUM</Value>
+						<Value>GPIO_SPEED_FREQ_HIGH</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_OUTPUT_PP</Value>
+						<Value>GPIO_MODE_OUTPUT_OD</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_FM_B7">
+					<Values>
+						<Value>__NULL</Value>
+						<Value>SYSCFG_CFGR1_I2C_FMP_PB7</Value>
+					</Values>
+				</Parameter>
+			</Parameters>
+		</Mode>
+		<Mode Type="Output" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>PB8</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_State">
+					<Values>
+						<Value>GPIO_PIN_RESET</Value>
+						<Value>GPIO_PIN_SET</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Speed">
+					<Values>
+						<Value>GPIO_SPEED_FREQ_LOW</Value>
+						<Value>GPIO_SPEED_FREQ_MEDIUM</Value>
+						<Value>GPIO_SPEED_FREQ_HIGH</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
+
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_OUTPUT_PP</Value>
+						<Value>GPIO_MODE_OUTPUT_OD</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_FM_B8">
+					<Values>
+						<Value>__NULL</Value>
+						<Value>SYSCFG_CFGR1_I2C_FMP_PB8</Value>
+					</Values>
+				</Parameter>
+			</Parameters>
+		</Mode>
+		<Mode Type="Output" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>PB9</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_State">
+					<Values>
+						<Value>GPIO_PIN_RESET</Value>
+						<Value>GPIO_PIN_SET</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Speed">
+					<Values>
+						<Value>GPIO_SPEED_FREQ_LOW</Value>
+						<Value>GPIO_SPEED_FREQ_MEDIUM</Value>
+						<Value>GPIO_SPEED_FREQ_HIGH</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_OUTPUT_PP</Value>
+						<Value>GPIO_MODE_OUTPUT_OD</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_FM_B9">
+					<Values>
+						<Value>__NULL</Value>
+						<Value>SYSCFG_CFGR1_I2C_FMP_PB9</Value>
+					</Values>
+				</Parameter>
+			</Parameters>
+		</Mode>
+		<Mode Type="Output" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>!(PA9,PA10,PB6,PB7,PB8,PB9)</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_State">
+					<Values>
+						<Value>GPIO_PIN_RESET</Value>
+						<Value>GPIO_PIN_SET</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Speed">
+					<Values>
+						<Value>GPIO_SPEED_FREQ_LOW</Value>
+						<Value>GPIO_SPEED_FREQ_MEDIUM</Value>
+						<Value>GPIO_SPEED_FREQ_HIGH</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_OUTPUT_PP</Value>
+						<Value>GPIO_MODE_OUTPUT_OD</Value>
+					</Values>
+				</Parameter>
+			</Parameters>
+		</Mode>
+		<Mode Type="EXTI" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>!(NULL)</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_IT_RISING</Value>
+						<Value>GPIO_MODE_IT_FALLING</Value>
+						<Value>GPIO_MODE_IT_RISING_FALLING</Value>
+						<Value>GPIO_MODE_EVT_RISING</Value>
+						<Value>GPIO_MODE_EVT_FALLING</Value>
+						<Value>GPIO_MODE_EVT_RISING_FALLING</Value>
+					</Values>
+				</Parameter>
+			</Parameters>
+		</Mode>
+		<Mode Type="EVENTOUT" ConfigMode="GPIO">
+			<Expressions>
+				<Expression>!(NULL)</Expression>
+			</Expressions>
+			<Parameters>
+				<Parameter Name="GPIO_Pull">
+					<Values>
+						<Value>GPIO_NOPULL</Value>
+						<Value>GPIO_PULLUP</Value>
+						<Value>GPIO_PULLDOWN</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Speed">
+					<Values>
+						<Value>GPIO_SPEED_FREQ_LOW</Value>
+						<Value>GPIO_SPEED_FREQ_MEDIUM</Value>
+						<Value>GPIO_SPEED_FREQ_HIGH</Value>
+					</Values>
+				</Parameter>
+				<Parameter Name="GPIO_Mode">
+					<Values>
+						<Value>GPIO_MODE_AF_PP</Value>
+					</Values>
+				</Parameter>
 			</Parameters>
 		</Mode>
 	</Modes>

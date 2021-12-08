@@ -8,7 +8,7 @@ software distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and limitations under the License.
 -->
-<SOC Name="STM32F030C6Tx" ClockTree="STM32F0" HasPowerPad="false" IOType="" Package="LQFP48">
+<SOC Name="STM32F030C6Tx" Series="STM32F0" Line="STM32F0x0 Value Line" ClockTree="STM32F0" HasPowerPad="false" IOType="" Package="LQFP48">
 	<Introduction English="Mainstream Arm Cortex-M0 Value line MCU with 32 Kbytes of Flash memory, 48 MHz CPU"
                   Chinese="具有32KB Flash和48MHz CPU的主流Arm Cortex-M0超值系列MCU" />
 	<Illustrate>
@@ -106,45 +106,45 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="RTC-TAMP1" />
 				<Function Name="RTC-TS" />
 				<Function Name="SYS-WKUP2" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PC14" Position="3" Type="I/O">
 			<Functions>
 				<Function Name="RCC-OSC32-IN" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PC15" Position="4" Type="I/O">
 			<Functions>
 				<Function Name="RCC-OSC32-OUT" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PF0" Position="5" Type="I/O">
 			<Functions>
 				<Function Name="RCC-OSC-IN" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PF1" Position="6" Type="I/O">
 			<Functions>
 				<Function Name="RCC-OSC-OUT" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -157,9 +157,9 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="RTC-TAMP2" />
 				<Function Name="SYS-WKUP1" />
 				<Function Name="USART1-CTS" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -168,10 +168,10 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="ADC-IN1" />
 				<Function Name="USART1-DE" />
 				<Function Name="USART1-RTS" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -179,9 +179,9 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="ADC-IN2" />
 				<Function Name="USART1-TX" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -189,9 +189,9 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="ADC-IN3" />
 				<Function Name="USART1-RX" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -201,9 +201,9 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="SPI1-NSS" />
 				<Function Name="TIM14-CH1" />
 				<Function Name="USART1-CK" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -211,9 +211,9 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="ADC-IN5" />
 				<Function Name="SPI1-SCK" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -224,10 +224,10 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="TIM16-CH1" />
 				<Function Name="TIM1-BKIN" />
 				<Function Name="TIM3-CH1" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -239,10 +239,10 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="TIM17-CH1" />
 				<Function Name="TIM1-CH1N" />
 				<Function Name="TIM3-CH2" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -251,10 +251,10 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="ADC-IN8" />
 				<Function Name="TIM1-CH2N" />
 				<Function Name="TIM3-CH3" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -264,36 +264,36 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="TIM14-CH1" />
 				<Function Name="TIM1-CH3N" />
 				<Function Name="TIM3-CH4" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PB2" Position="20" Type="I/O">
 			<Functions>
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PB10" Position="21" Type="I/O">
 			<Functions>
 				<Function Name="I2C1-SCL" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PB11" Position="22" Type="I/O">
 			<Functions>
 				<Function Name="I2C1-SDA" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -303,10 +303,10 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="SPI1-NSS" />
 				<Function Name="TIM1-BKIN" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -314,9 +314,9 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="SPI1-SCK" />
 				<Function Name="TIM1-CH1N" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -324,9 +324,9 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="SPI1-MISO" />
 				<Function Name="TIM1-CH2N" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -335,9 +335,9 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="RTC-REFIN" />
 				<Function Name="SPI1-MOSI" />
 				<Function Name="TIM1-CH3N" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -346,10 +346,10 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="RCC-MCO" />
 				<Function Name="TIM1-CH1" />
 				<Function Name="USART1-CK" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -358,9 +358,9 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="I2C1-SCL" />
 				<Function Name="TIM1-CH2" />
 				<Function Name="USART1-TX" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -370,9 +370,9 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="TIM17-BKIN" />
 				<Function Name="TIM1-CH3" />
 				<Function Name="USART1-RX" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -380,10 +380,10 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="TIM1-CH4" />
 				<Function Name="USART1-CTS" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -392,10 +392,10 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="TIM1-ETR" />
 				<Function Name="USART1-DE" />
 				<Function Name="USART1-RTS" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -403,27 +403,27 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="IR-OUT" />
 				<Function Name="SYS-SWDIO" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PF6" Position="35" Type="I/O">
 			<Functions>
 				<Function Name="I2C1-SCL" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PF7" Position="36" Type="I/O">
 			<Functions>
 				<Function Name="I2C1-SDA" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -431,9 +431,9 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="SYS-SWCLK" />
 				<Function Name="USART1-TX" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -441,20 +441,20 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="SPI1-NSS" />
 				<Function Name="USART1-RX" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
 		<Pin Name="PB3" Position="39" Type="I/O">
 			<Functions>
 				<Function Name="SPI1-SCK" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -462,10 +462,10 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="SPI1-MISO" />
 				<Function Name="TIM3-CH1" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -475,9 +475,9 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="SPI1-MOSI" />
 				<Function Name="TIM16-BKIN" />
 				<Function Name="TIM3-CH2" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -486,9 +486,9 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="I2C1-SCL" />
 				<Function Name="TIM16-CH1N" />
 				<Function Name="USART1-TX" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -497,9 +497,9 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="I2C1-SDA" />
 				<Function Name="TIM17-CH1N" />
 				<Function Name="USART1-RX" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -508,9 +508,9 @@ See the License for the specific language governing permissions and limitations 
 			<Functions>
 				<Function Name="I2C1-SCL" />
 				<Function Name="TIM16-CH1" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
@@ -519,10 +519,10 @@ See the License for the specific language governing permissions and limitations 
 				<Function Name="I2C1-SDA" />
 				<Function Name="IR-OUT" />
 				<Function Name="TIM17-CH1" />
-				<Function Name="GPIO-INPUT" />
-				<Function Name="GPIO-OUTPUT" />
-				<Function Name="GPIO-ANALOG" />
-				<Function Name="GPIO-EVENTOUT" />
+				<Function Name="GPIO-Input" />
+				<Function Name="GPIO-Output" />
+				<Function Name="GPIO-Analog" />
+				<Function Name="EVENTOUT" />
 				<Function Name="GPIO-EXTI" />
 			</Functions>
 		</Pin>
